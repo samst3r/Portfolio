@@ -123,3 +123,75 @@ table {
   border-spacing: 0;
 }
 /* end of css reset*/
+
+@font-face {
+  font-family: "HemiHead-Bold";
+  src:
+    url("fonts/HemiHead-Bold.woff2") format("woff2"),
+    url("fonts/HemiHead-Bold.woff") format("woff"),
+    url("fonts/HemiHead-Bold.otf") format("opentype"); /* Include the OTF as a fallback */
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "HemiHead-BoldItalic";
+  src:
+    url("fonts/HemiHead-BoldItalic.woff2") format("woff2"),
+    url("fonts/HemiHead-BoldItalic.woff") format("woff"),
+    url("fonts/HemiHead-BoldItalic.otf") format("opentype"); /* Include the OTF as a fallback */
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+}
+nav {
+  grid-column: 1/13;
+  height: 10vh;
+  display: inherit;
+  grid-template-columns: inherit;
+  grid-template-rows: inherit;
+  margin-top: 2vh;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+/*
+nav a {
+  color: black;
+  text-decoration: none;
+  font-family: "HemiHead-Bold";
+  text-align: center;
+  margin: auto;
+}
+  */
+nav h1 {
+  color: black;
+  text-decoration: none;
+  font-family: "HemiHead-Bold";
+  font-size: 3em;
+  text-align: center;
+  margin: auto;
+}
+#projects-button {
+  grid-column: 2/5;
+}
+nav h1:hover {
+  cursor: pointer;
+}
+
+#nav-icon {
+  width: 100%;
+  grid-column: 6/8;
+  height: inherit;
+}
+#nav-icon:hover {
+  cursor: pointer;
+}
+
+#contact-button {
+  grid-column: 9/12;
+}
