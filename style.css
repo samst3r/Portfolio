@@ -146,9 +146,9 @@ table {
 }
 body {
   display: grid;
-  height: 100vh;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto;
+  width: 100vw;
 }
 nav {
   grid-column: 1/13;
@@ -157,7 +157,6 @@ nav {
   grid-template-columns: inherit;
   grid-template-rows: inherit;
   margin-top: 2vh;
-  background-color: rgba(0, 0, 0, 0.2);
 }
 /*
 nav a {
@@ -187,7 +186,7 @@ nav h1:hover {
   width: 100%;
   grid-column: 6/8;
   height: inherit;
-display: flex;
+  display: flex;
   justify-content: center;
 }
 #nav-icon:hover {
@@ -197,23 +196,58 @@ display: flex;
 #contact-button {
   grid-column: 9/12;
 }
-#nav-icon-div svg{
-  height:inherit;
+#nav-icon-div svg {
+  height: inherit;
 }
 
-#title-section{
-  height:88vh;
-grid-column: 1/13;  
-display: grid;
-grid-template-columns: inherit;
-grid-template-rows: repeat(8, 1fr);
+#title-section {
+  height: 88vh;
+  grid-column: 1/13;
+  display: grid;
+  grid-template-columns: inherit;
+  grid-template-rows: repeat(8, 1fr);
 }
-#title{
+#title {
   grid-column: 3/11;
   margin: auto;
   grid-row: 1/5;
   text-align: center;
-  font-size: 5em;
-    text-decoration: none;
+  font-size: 6em;
+  text-decoration: none;
   font-family: "HemiHead-Bold";
+}
+#title-buttons-div {
+  height: fit-content;
+  grid-column: 1/13;
+  grid-row: 5/7;
+  display: flex;
+  justify-content: space-evenly;
+}
+.title-button {
+  font-size: 3em;
+  padding: 1em;
+  font-family: "HemiHead-Bold";
+  border-radius: 1em;
+}
+#info-button {
+  margin-left: 20vw;
+}
+
+/*
+
+
+
+
+
+
+
+
+
+
+*/
+
+footer {
+  grid-column: 1/13;
+}
+#footer-design {
 }
