@@ -183,10 +183,12 @@ nav h1:hover {
   cursor: pointer;
 }
 
-#nav-icon {
+#nav-icon-div {
   width: 100%;
   grid-column: 6/8;
   height: inherit;
+display: flex;
+  justify-content: center;
 }
 #nav-icon:hover {
   cursor: pointer;
@@ -194,4 +196,24 @@ nav h1:hover {
 
 #contact-button {
   grid-column: 9/12;
+}
+#nav-icon-div svg{
+  height:inherit;
+}
+
+#title-section{
+  height:88vh;
+grid-column: 1/13;  
+display: grid;
+grid-template-columns: inherit;
+grid-template-rows: repeat(8, 1fr);
+}
+#title{
+  grid-column: 3/11;
+  margin: auto;
+  grid-row: 1/5;
+  text-align: center;
+  font-size: 5em;
+    text-decoration: none;
+  font-family: "HemiHead-Bold";
 }
