@@ -144,16 +144,8 @@ table {
   font-style: normal;
   font-display: swap;
 }
-.ms-madi-regular {
-  font-family: "Ms Madi", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
 
-main {
-  padding-top: 10vh;
-}
-#main-div {
+#main {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto;
@@ -211,62 +203,16 @@ nav h1:hover {
   height: inherit;
 }
 
-#title-section {
-  height: 88vh;
-  grid-column: 1/13;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-}
-#title {
-  grid-column: 3/11;
-  grid-row: 1/5;
-  text-align: center;
-  font-size: 7em;
-  text-decoration: none;
-  font-family: "HemiHead-Bold";
-}
-#title-buttons-div {
-  height: fit-content;
-  grid-column: 1/13;
-  grid-row: 5/7;
-  display: flex;
-  justify-content: space-evenly;
-}
-.explore-button {
-  font-size: 4em;
-  padding: 0.7em;
-  font-family: "HemiHead-Bold";
-  border-radius: 1em;
-  position: relative;
-  bottom: 10vh;
-  width: 25vw;
-}
+/*
+
+
+
+
+
+
+
+*/
 
 footer {
   width: 100vw;
-  height: 40vh;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-areas:
-    "extra extra extra extra"
-    "signature signature signature signature";
-}
-footer h1 {
-  font-family: "HemiHead-Bold";
-  grid-area: signature;
-  margin-top: auto;
-  font-style: italic;
-  font-size: 3em;
-  height: fit-content;
-  width: fit-content;
-}
-#footer-extras {
-  grid-area: extra;
-  background-color: aqua;
-  width: 100%;
-}
-footer svg {
-  width: 3.5em;
-  height: 3.5em;
 }
