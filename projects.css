@@ -215,4 +215,38 @@ nav h1:hover {
 
 footer {
   width: 100vw;
+  height: 60vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    "instagram extra extra extra"
+    "signature signature signature signature";
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+footer h1 {
+  display: flex;
+  font-family: "HemiHead-Bold";
+  grid-area: signature;
+
+  font-style: italic;
+  font-size: 18em;
+  height: max-content;
+  width: fit-content;
+  color: white;
+  text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);
+  align-self: center;
+}
+
+#instagram {
+  grid-area: instagram;
+  width: 7em;
+  height: 7em;
+  margin-top: auto;
+  display: flex;
+  justify-self: center;
+  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.5));
 }
